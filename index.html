@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Koode wipsaait</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link href="css/styles.css" rel="stylesheet" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
+</head>
+<body>
+
+<div id="menu" class="modal">
+      <div class="close">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      </div>
+    <div class="modal-menu">
+      <a href="about.html">Over ons</a>
+      <a href="services.html">Wat we voor u doen</a>
+      <a href="contact.html">Contacteer ons</a>
+    </div>
+  </div>
+
+  <header>
+    <a href="index.html">
+      <button class="header_logo_container" type="button">
+      <span class="logo_box">
+        <span class="logo_inner"></span>
+      </span>
+      <span class="logo_tekst_box">
+        <div class="logo_tekst_overlay">
+          <span class="logo_tekst_inner"></span>
+        </div>
+      </span>
+      </button>
+    </a>
+    <div class="header_menu_container mobile-hamburger" onclick="openNav()">
+      <span></span>
+    </div>
+  </header>
+
+  <div class="homepage_grid">
+
+    <div class="box pig foto_homepage resize50">
+      <a href="services.html" class="fill-box"></a>
+    </div>
+
+    <div class="box monkey foto_homepage resize60">
+      <div class="monkey-content">
+        <a href="services.html">
+          <h1> Wat wij voor u kunnen doen!<h1>
+          <p class="monkey-content-hidden">Verborgen tekst</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="box penguin foto_homepage resize60">
+      <a href="contact.html" class="fill-box"></a>
+    </div>
+  </div>
+  <!--
+      <div class="box a pig">
+          <p class="hometext hometop">Voor U</p>
+          <p class="hometext homebottom">Uw project op maat gemaakt</p>
+      </div>
+
+
+      <div class="box a monkey">
+        <p class="hometext hometop">Over ons</p>
+        <p class="hometext homebottom">Wij maken, uw website</p>
+      </div>
+
+
+       <div class="box a penguin">
+        <p class="hometext hometop">Contact</p>
+        <p class="hometext homebottom">Let's talk!</p>
+      </div>
+    </div>
+  -->
+
+  <script>
+  function openNav() {
+      document.getElementById("menu").style.width = "100%";
+  }
+
+  function closeNav() {
+      document.getElementById("menu").style.width = "0%";
+  }
+  </script>
+</body>
+</html>
