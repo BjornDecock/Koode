@@ -99,37 +99,40 @@ figure {margin: 0; }
 
 /*
   ========================================
+  Custom Styles
+  ========================================
+*/
+button:focus {outline:0;}
+
+/*
+  ========================================
   Cross-page Header
   ========================================
 */
 header {
-  width: 100%;
-  height: 55px;
   position: fixed;
-  background-color: transparent;
-  left: 0;
   top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: auto;
+  background-color: transparent;
   z-index: 10;
 }
 
 /* LOGO */
 .header_logo_container {
-  padding: 20px 20px;
-  display: inline-block;
-  background-color: transparent;
-  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
   border: 0;
   margin: 0;
-  height: inherit;
+  padding: 20px 20px;
+  background-color: transparent;
+  cursor: pointer;
+  height: 55px;
   overflow: visible;
 }
-
-.mobile-hamburger {width: 55px; display: flex; align-items: center;cursor: pointer; background-color: #444D4C; padding: 5px; border-radius: 50%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);}
-.mobile-hamburger span,.mobile-hamburger span:before,.mobile-hamburger span:after {background-color: #AADDFF;; content: ""; margin: 0 auto; display: block; position: relative; height: 2px; width: 30px;transition: all 0.2s ease-out;}
-.mobile-hamburger span:before {top: 10px;}
-.mobile-hamburger span:after {top: -12px;}
-.mobile-hamburger:hover span:before {top: 2px;}
-.mobile-hamburger:hover span:after {top: -2px;}
 
 .logo_box {
   display: inline-block;
@@ -145,7 +148,6 @@ header {
   background-size: contain;
   height: inherit;
 }
-
 
 .logo_tekst_box {
   display: inline-block;
@@ -179,15 +181,29 @@ header {
   margin-left: -2px;
 }
 
-/* MENU */
 
+
+
+/* MENU & HAMBURGER */
 .header_menu_container {
-  position: relative;
-  float: right;
-  height: inherit;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 55px;
   margin: 20px 25px 0 0;
 }
 
+.mobile-hamburger {width: 55px; display: flex; align-items: center;cursor: pointer; background-color: #444D4C; padding: 5px; border-radius: 50%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);}
+.mobile-hamburger span,.mobile-hamburger span:before,.mobile-hamburger span:after {background-color: #AADDFF;; content: ""; margin: 0 auto; display: block; position: relative; height: 2px; width: 30px;transition: all 0.2s ease-out;}
+.mobile-hamburger span:before {top: 10px;}
+.mobile-hamburger span:after {top: -12px;}
+.mobile-hamburger:hover span:before {top: 2px;}
+.mobile-hamburger:hover span:after {top: -2px;}
+
+
+
+
+/* MENU OVERLAY */
 .modal {height: 100%; width: 0; position: fixed; z-index: 100; top: 0; right: 0;background-color: rgba(0,0,0, 1); overflow-x: hidden; transition: 0.5s;}
 .modal-menu {position: relative; top: 15%; width: 100%; text-align: center;}
 .modal a {padding: 12px; text-decoration: none; font-size: 36px; color: #818181; display: block; transition: 0.3s;}
@@ -215,8 +231,7 @@ header {
   --margin-top: 55px;
   display: grid;
   width: 100%;
-  height: 100vh; /* fallback if needed */
-  --height: calc(100vh - 55px);
+  height: 100vh;
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: 1fr;
   /*grid-column-gap: 3px;*/
@@ -249,8 +264,12 @@ header {
   align-items: flex-end;
 }
 .monkey-content {
-  width: 90%;
-  margin-bottom: 10%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  padding-bottom: 10vh;
 }
 .monkey-content-hidden {opacity: 0; transition: all 0.2s;}
 .monkey:hover .monkey-content-hidden {opacity: 1;}
@@ -284,10 +303,8 @@ header {
 .subpage_foto_grid, .contact_foto_grid {
   display: grid;
   position: fixed;
-  --margin-top: 55px;
-  width: 35%;
-  height: 100vh; /* fallback if needed */
-  --height: calc(100vh - 55px);
+  width: 30%;
+  height: 100vh;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   background-repeat: no-repeat;
@@ -303,13 +320,12 @@ header {
   display: grid;
   top: 0;
   left: 0;
-  --margin-top: 55px;
-  margin-left: 35%;
-  width: 65%;
-  height: 100vh; /* fallback if needed */
-  --height: calc(100vh - 55px);
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 70vh 500px;
+  margin-left: 30%;
+  width: 70%;
+  height: 100vh;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 70vh;
+  grid-auto-rows: 700px;
 }
 
 .contact_grid { /* override subpage_grid */
@@ -329,16 +345,21 @@ header {
   background-color: yellow;
 }
 
-.subpage_subtitel {
- grid-area: 2 / 1 / 3 / 2;
- background-color: blue;
-}
-
-.subpage_tekst {
-  grid-area: 2 / 2 / 3 / 3;
+.grid_title_even {
   background-color: orange;
 }
 
+.grid_text_even {
+  background-color: cyan;
+}
+
+.grid_title_uneven {
+  background-color: cyan;
+}
+
+.grid_text_uneven {
+  background-color: orange;
+}
 
 
 

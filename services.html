@@ -5,13 +5,23 @@
     <title>Koode wipsaait</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link href="css/normalize.css" rel="stylesheet" media="all">
     <link href="css/styles.css" rel="stylesheet" media="all">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="css/hamburgers.css" rel="stylesheet">
     <!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
 </head>
 <body>
+  <div id="menu" class="modal">
+    <div class="close">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    </div>
+    <div class="modal-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">Over ons</a>
+      <a href="services.html">Wat we voor u doen</a>
+      <a href="contact.html">Contacteer ons</a>
+    </div>
+  </div>
+
   <header>
     <a href="index.html">
       <button class="header_logo_container" type="button">
@@ -25,11 +35,9 @@
       </span>
       </button>
     </a>
-    <button class="header_menu_container hamburger hamburger--collapse" type="button">
-      <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-      </span>
-    </button>
+    <div class="header_menu_container mobile-hamburger" onclick="openNav()">
+      <span></span>
+    </div>
   </header>
 
   <div class="subpage_foto_grid pig resize50">
@@ -38,10 +46,32 @@
     <div class="subpage_titel">
       <h1> Wij bieden dit aan</h1>
     </div>
-    <div class="subpage_subtitel">
+
+    <div class="grid_title_even">
       <h1>Titel Content</h1>
     </div>
-    <div class"subpage_tekst">
+    <div class="grid_text_even">
+      <h1>Tekst Content</h1>
+    </div>
+
+    <div class="grid_title_uneven">
+      <h1>Titel Content</h1>
+    </div>
+    <div class="grid_text_uneven">
+      <h1>Tekst Content</h1>
+    </div>
+
+    <div class="grid_title_even">
+      <h1>Titel Content</h1>
+    </div>
+    <div class="grid_text_even">
+      <h1>Tekst Content</h1>
+    </div>
+
+    <div class="grid_title_uneven">
+      <h1>Titel Content</h1>
+    </div>
+    <div class="grid_text_uneven">
       <h1>Tekst Content</h1>
     </div>
   </div>
@@ -71,7 +101,14 @@
     </div>
 -->
 
-<script src="https://ajax.googleapis.com/ajax/libs/dojo/1.13.0/dojo/dojo.js"></script>
-<script src="js/menu.js"></script>
+  <script>
+  function openNav() {
+      document.getElementById("menu").style.width = "100%";
+  }
+
+  function closeNav() {
+      document.getElementById("menu").style.width = "0%";
+  }
+  </script>
 </body>
 </html>
