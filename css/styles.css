@@ -182,8 +182,6 @@ header {
 }
 
 
-
-
 /* MENU & HAMBURGER */
 .header_menu_container {
   position: absolute;
@@ -325,7 +323,7 @@ header {
   height: 100vh;
   grid-template-columns: 2fr 3fr;
   grid-template-rows: 70vh;
-  grid-auto-rows: 700px;
+  grid-auto-rows: 500px;
 }
 
 .contact_grid { /* override subpage_grid */
@@ -342,16 +340,24 @@ header {
 
 .subpage_titel {
   grid-area: 1 / 1 / 2 / 3;
-  background-color: yellow;
 }
 
-.grid_title_even {
-  background-color: orange;
+.dark {
+  background-color: #171719;
 }
 
-.grid_text_even {
-  background-color: cyan;
+.light {
+  background-color: white;
 }
+
+.grid_title {
+  padding: 6vh 6vh;
+}
+
+.grid_text {
+  padding: 12vh 6vh;
+}
+
 
 .grid_title_uneven {
   background-color: cyan;
@@ -361,11 +367,41 @@ header {
   background-color: orange;
 }
 
+/*
+  ========================================
+  subpages typography
+  ========================================
+*/
+.subpage_titel h1 {
+  font-size: 4em;
+  margin-left: 6vh;
+  margin-top: 18vh;
+  font-weight: bold;
+}
 
+.subpage_titel h2 {
+  font-size: 2em;
+  margin-left: 6vh;
+  margin-top: 5vh;
+  font-family: 'Montserrat', sans-serif;
+}
 
+.dark h1, .light h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
 
+.dark p, .light p {
+  font-size: 1em;
+}
 
+.dark h1, .dark p {
+  color: white;
+}
 
+.light h1, .light p {
+  color: #171719;
+}
 
 
 
