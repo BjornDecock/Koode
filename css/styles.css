@@ -166,6 +166,15 @@ figure {margin: 0; }
 .schuin {padding: 0 5px; }
 .schuin-dicht {padding: 0 2px;}
 
+.box-content-testjan {padding: 0 7px 35px 7px; position: absolute; width: 100%; bottom: 0;}
+.box-content-testjan h1 {font-weight: bold; padding: 0 10px 7px 10px; font-size: 2.3rem; transition: all 0.45s ease; transform: translateY(75px);}
+.box-content-testjan h2 {font-weight: bold; padding: 0 10px 7px 10px; font-size: 1.5rem; transition: all 0.45s ease; transform: translateY(-5px);}
+.box-content-testjan p {width: 100%; padding: 0 10px; font-size: 1.2rem; transition: all 0.45s ease; transform: translateY(15px); opacity: 0;background-color: rgba(255, 255, 255, 0);}
+.box:hover .box-content-testjan h1 {transform: translateY(-25px);background-color: rgba(255, 255, 255, 0.7)}
+.box:hover .box-content-testjan h2 {transform: translateY(10px);}
+.box:hover .box-content-testjan p {transform: translateY(-5px); opacity: 1;}
+
+
 .fill-box {display: block; height: 100%; width: 100%; text-decoration: none;}
 
 .pig {background: #f2f2f2 url("../img/pig.png");}
