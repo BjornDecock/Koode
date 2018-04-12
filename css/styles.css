@@ -216,6 +216,21 @@ figure {margin: 0; }
   margin-top: 75px;
 }
 
+.contact_grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  height: 100vh;
+  grid-template-rows: 1fr;
+}
+
+.contact_content {
+  padding-top: 75px;
+  padding-left: 10px;
+}
+
+
+.contact_grid_img {margin-top: 575px;}
+
 .grid_img {grid-column: 1 / 2; align-self: bottom;}
 .subpage_titel {grid-column: 2 / 4;}
 .grid_right_wide {grid-column: 2 / 4;}
