@@ -70,7 +70,8 @@ img {border-style: none; }
 svg:not(:root) {overflow: hidden;}
 img {display: inline-block; vertical-align: middle; max-width: 100%; height: auto;-ms-interpolation-mode: bicubic;}
 
-header {position: fixed; top: 0; left: 0; right: 0; width: 100vw; height: 75px; z-index: 10;}
+/*header {position: fixed; top: 0; left: 0; right: 0; width: 100vw; height: 75px; z-index: 10;}*/
+header {position: fixed; top: 0; left: 0; right: 0; z-index: 10;}
 .header_menu_container {position: absolute; top: 0; right: 0; height: 55px;margin: 15px 35px 0 0;}
 .header_logo_container {position: absolute; top: 0; left: 0; border: 0; margin: 0; padding: 10px 15px; background-color: transparent;  cursor: pointer; height: 55px; overflow: visible;}
 .logo_box {display: inline-block; width: 40px; height: 40px;position: relative;}
@@ -106,7 +107,7 @@ body {background-color: #f2f2f2;}
 
 .pig {background: #f2f2f2 url("../img/pig.png");}
 .monkey {background: #f2f2f2 url("../img/chimpancee.png");}
-.penguin {background: #f2f2f2 url("../img/penguin.png");}
+.penguin {background: #f2f2f2 url("../img/penguin_red.png");}
 
 .foto_homepage {background-repeat: no-repeat; background-position: bottom;}
 .resize55 {background-size: auto 100%;}
@@ -187,18 +188,26 @@ figure {margin: 0; }
 
 .box-content-testjan3 {padding: 0 7px 35px 7px; position: absolute; width: 100%; bottom: 0;}
 .box-content-testjan3 h1 {font-weight: bold; padding: 0 10px 7px 10px; font-size: 2.3rem; transition: all 0.45s ease; transform: translateY(55px);}
-.box-content-testjan3 h2 {font-weight: bold; padding: 0 10px 0px 10px; font-size: 1.5rem; transition: all 0.45s ease; transform: translateY(55px);}
-.box-content-testjan3 p {width: 100%; padding: 0 10px; font-size: 1.2rem; transition: all 0.45s ease; transform: translateY(15px); opacity: 0;}
+.box-content-testjan3 h2 {padding: 0 10px 0px 10px; font-size: 1.5rem; transition: all 0.45s ease; transform: translateY(55px);}
+.box-content-testjan3 p {width: 100%; padding: 0 10px; font-size: 0.85rem; transition: all 0.45s ease; transform: translateY(-100px); opacity: 0;}
 .box:hover .box-content-testjan3 h1 {transform: translateY(-5px);}
 .box:hover .box-content-testjan3 h2 {transform: translateY(-5px);}
 .box:hover .box-content-testjan3 p {transform: translateY(-5px); opacity: 1;}
+
+.box-content-testjan4 {min-height: 300px; padding: 50px 7px 0 7px; position: absolute; width: 100%; bottom: 0;}
+.box-content-testjan4 h1 {font-weight: bold; padding: 0 10px 7px 10px; font-size: 2.3rem; transition: all 0.45s ease; transform: translateY(55px);}
+.box-content-testjan4 h2 {font-weight: bold; padding: 0 10px 0px 10px; font-size: 1.5rem; transition: all 0.45s ease; transform: translateY(55px);}
+.box-content-testjan4 p {width: 100%; padding: 0 10px; font-size: 1.1rem; transition: all 0.45s ease; transform: translateY(-100px); opacity: 0;}
+.box:hover .box-content-testjan4 h1 {transform: translateY(-5px);}
+.box:hover .box-content-testjan4 h2 {transform: translateY(-5px);}
+.box:hover .box-content-testjan4 p {transform: translateY(-5px); opacity: 1;}
 /*EINDE TESTJAN HOMEPAGE*/
 
 .fill-box {display: block; height: 100%; width: 100%; text-decoration: none;}
 
 .pig {background: #f2f2f2 url("../img/pig.png");}
 .monkey {background: #f2f2f2 url("../img/chimpancee.png");}
-.penguin {background: #f2f2f2 url("../img/penguin.png");}
+.penguin {background: #f2f2f2 url("../img/penguin_red.png");}
 
 .foto_homepage {background-repeat: no-repeat; background-position: 50% 25%;}
 .resize55 {background-size: auto 55%;}
