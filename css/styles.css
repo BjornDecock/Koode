@@ -233,8 +233,28 @@ figure {margin: 0; }
 }
 
 .contact_content {
-  padding-top: 75px;
-  padding-left: 10px;
+  padding: 35px 75px;
+}
+
+.contact_block {
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 25px;
+  min-height: 85px;
+}
+
+.contact_content h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.contact_content h2 {
+  font-size: 1.125em;
+  font-weight: bold;
+}
+
+.contact_text {
+font-size: 0.8em;
 }
 
 
