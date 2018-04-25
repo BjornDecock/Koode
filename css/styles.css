@@ -26,6 +26,8 @@ button,[type="button"],[type="reset"],[type="submit"] {-webkit-appearance: butto
 button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner { border-style: none;  padding: 0;}
 button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring { outline: 1px dotted ButtonText;}
 fieldset { padding: 0.35em 0.75em 0.625em;}
+input, textarea, select, button {outline: none; cursor: text; text-rendering: auto; color: initial; letter-spacing: normal; word-spacing: normal; text-transform: none; text-indent: 0px; text-shadow: none; display: inline-block; text-align: start; margin: 0em;
+}
 legend {box-sizing: border-box; /* 1 */  color: inherit; /* 2 */  display: table; /* 1 */  max-width: 100%; /* 1 */  padding: 0; /* 3 */  white-space: normal; /* 1 */}
 progress {vertical-align: baseline;}
 textarea {overflow: auto;}
@@ -118,7 +120,7 @@ body {background-color: #f2f2f2;}
 }
 
  /* start min-width 800px */
-@media (min-width: 800px) {
+@media (min-width: 800px)
 h1, h2, h3, h4, h5, h6 {font-style: normal; font-weight: normal; color: inherit; text-rendering: optimizeLegibility;}
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small,  {line-height: 0; color: #cacaca; }
 h1 {font-size: 1.5rem; line-height: 1.4; margin-top: 0;margin-bottom: 0.5rem;}
@@ -271,8 +273,11 @@ footer a:hover {color: black;}
 .tekst_rechts {float: right; width: 50%;}
 
 .contact_grid {display: grid;  grid-template-columns: repeat(2,1fr); height: 100vh; grid-template-rows: 1fr;}
-.contact_content {padding-top: 75px; padding-left: 10px;}
-
+.contact_content {padding: 75px 30px 0 30px;}
+.contact_text a {border-bottom: 1px solid black;}
+.contact_text a:hover {border: none;}
+.contact_text span {padding: 0 13px 13px 0;}
+.contact_block {margin-bottom: 35px;}
 .contact_grid_img {margin-top: 575px;}
 
 /* About Us */
@@ -282,8 +287,20 @@ footer a:hover {color: black;}
 .about-us-p {text-align: left; padding-left: 10px;}
 .about-us_tekst h2 {padding: 0 25px; text-align: left; font-size: 2.3rem; margin-bottom: 20px;}
 .about-us_tekst p {padding: 0 25px; font-size: 1.2rem; line-height: 1.8;}
-} /* einde min width 800 px */
 
+form {margin-bottom: 1.5rem; width: 80%; box-shadow: rgba(55, 71, 79, 0.15) 0px 3px 15px; padding: 40px 30px;}
+form p {position: relative; margin-bottom: 1.5rem;}
+input, textarea {width: 100%; font-size: .9rem; border: 1px solid #bcbdc2; border-radius: 3px; padding: 1.1rem .85rem .85rem .85rem;}
+input[type=submit] {cursor: pointer; color: inherit; border: 0; padding: 1rem; background-color: #f2f2f2; transition: all .25s ease;}
+input[type=submit]:hover {background-color: #444D4C; color: white;}
+input:focus, textarea:focus {border: 1px solid #444D4C; }
+input:focus+label {color: #444D4C}
+textarea {resize: none;}
+label {position: absolute; top: -.8rem; left: .8em; width: auto; padding: 0 .25rem; background-color: white;}
+
+.svg {display: inline-block; position: relative ;top: 3px;}
+
+}
 @media screen and (max-height: 440px) {
   .modal a {font-size: 18px}
   .modal .closebtn {
