@@ -1,0 +1,12 @@
+<svg fill="white" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 100 125" x="0px" y="0px">
+  <title>19</title>
+  <g data-name="Group">
+    <path data-name="Compound Path" d="M94,16.8a12,12,0,0,0-12-12H18a12,12,0,0,0-12,12V83.3a12,12,0,0,0,12,12H82a12,12,0,0,0,12-12Zm-76-8H82a8,8,0,0,1,8,8v10H10v-10A8,8,0,0,1,18,8.8ZM82,91.3H18a8,8,0,0,1-8-8V30.8H90V83.3A8,8,0,0,1,82,91.3Z"/>
+    <circle data-name="Path" cx="30" cy="17.7" r="4.1"/>
+    <circle data-name="Path" cx="40.6" cy="17.7" r="4.1"/>
+    <circle data-name="Path" cx="19.4" cy="17.7" r="4.1"/>
+    <path data-name="Compound Path" d="M79.9,37.9H20.1a2,2,0,0,0-2,2V56.4a2,2,0,0,0,2,2H79.9a2,2,0,0,0,2-2V39.9A2,2,0,0,0,79.9,37.9Zm-2,16.5H22.1V41.9H77.9Z"/>
+    <path data-name="Compound Path" d="M79.9,64.4H66.1a2,2,0,0,0-2,2v15a2,2,0,0,0,2,2H79.9a2,2,0,0,0,2-2v-15A2,2,0,0,0,79.9,64.4Zm-2,15H68.1v-11h9.8Z"/>
+    <path data-name="Compound Path" d="M33.9,64.4H20.1a2,2,0,0,0-2,2v15a2,2,0,0,0,2,2H33.9a2,2,0,0,0,2-2v-15A2,2,0,0,0,33.9,64.4Zm-2,15H22.1v-11h9.8Z"/>
+    <path data-name="Compound Path" d="M56.9,64.4H43.1a2,2,0,0,0-2,2v15a2,2,0,0,0,2,2H56.9a2,2,0,0,0,2-2v-15A2,2,0,0,0,56.9,64.4Zm-2,15H45.1v-11h9.8Z"/></g>
+</svg>
