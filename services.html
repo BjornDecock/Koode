@@ -22,7 +22,7 @@
     </div>
   </div>
 
-  <header>
+  <header class="header">
     <a href="index.html">
       <button class="header_logo_container" type="button">
       <span class="logo_box">
@@ -56,10 +56,10 @@
       </div>
     </div>
 
-    <div class="grid_span_all">
+    <div class="grid_span_all flexbox">
 
-    <div class="flex-item light">
-      <h2 class="center_text">Digitale strategie</h2>
+    <div class="flex-item dark">
+      <h2 class="center_text">Digitale <br />strategie</h2>
       <p class="center_text pimg"><img src="img/strategie.svg" class="icon" /></p>
       <div>
         <p>Wij zijn er niet op uit om te verkopen wat u niet nodig heeft. Als start van een project denken wij graag samen na met u over welke de ideale digitale strategie is voor u.</p>
@@ -68,7 +68,7 @@
       </div>
     </div>
 
-    <div class="flex-item dark">
+    <div class="flex-item light">
       <h2 class="center_text">Website ontwikkeling</h2>
       <p class="center_text pimg"><img src="img/website.svg" class="icon" /></p>
       <div>
@@ -76,7 +76,7 @@
       </div>
     </div>
 
-    <div class="flex-item light">
+    <div class="flex-item dark">
       <h2 class="center_text">Optimalisatie zoekresultaten</h2>
       <p class="center_text pimg"><img src="img/seo.svg" class="icon" /></p>
       <div>
@@ -86,8 +86,8 @@
       </div>
     </div>
 
-    <div class="flex-item dark">
-      <h2 class="center_text">Sociale media</h2>
+    <div class="flex-item light">
+      <h2 class="center_text">Sociale <br />media</h2>
       <p class="center_text pimg"><img src="img/social-media.svg" class="icon" /></p>
       <div>
         <p>Consumenten zoeken vaker en vaker ook bedrijven via sociale media. Daarom is het niet onbelangrijk om ook via deze kanalen aanwezig te zijn voor uw klanten. </p>
@@ -96,8 +96,8 @@
     </div>
 
 
-    <div class="flex-item light">
-      <h2 class="center_text">Analyse</h2>
+    <div class="flex-item dark">
+      <h2 class="center_text">Analyse & resultaat</h2>
       <p class="center_text pimg"><img src="img/analyse.svg" class="icon" /></p>
       <div>
         <p>Wij vinden het heel belangrijk om ook de prestaties van uw website onder de loep te houden.</p>
@@ -130,6 +130,23 @@
       document.getElementById("menu").style.width = "0%";
   }
   </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+
+  $(function() {
+    var header = $(".header");
+
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 1) {
+            header.addClass("scrolled");
+        } else {
+            header.removeClass("scrolled");
+        }
+    });
+
+});
+</script>
   <script src="js/vendor.js"></script>
   <script>
     AOS.init();
