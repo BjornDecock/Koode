@@ -22,18 +22,10 @@
     </div>
   </div>
 
-  <header>
+  <header class="header">
     <a href="index.html">
-      <button class="header_logo_container" type="button">
-      <span class="logo_box">
-        <span class="logo_inner"></span>
-      </span>
-      <span class="logo_tekst_box">
-        <div class="logo_tekst_overlay">
-          <span class="logo_tekst_inner"></span>
-        </div>
-      </span>
-      </button>
+        <img src="img/logo.svg" alt="Koode. Zorgeloos digitaal" />
+        <h1>. Zorgeloos digitaal</h1>
     </a>
     <div class="header_menu_container mobile-hamburger" onclick="openNav()">
       <span></span>
@@ -42,7 +34,7 @@
 
   <div class="contact_grid">
 
-    <div class="foto_homepage penguin resize80">
+    <div class="content_foto foto_homepage penguin resize-vert-contact">
         <!--<img src="img/penguin.png"  alt="Onze diensten" />-->
     </div>
     <div class="contact_content">
@@ -71,9 +63,9 @@
       </div>
       <div class="contact_block">
 
-    <form>
+    <form action="https://formspree.io/bdecock@telenet.be">
       <p>
-      <input type="text" id ="name" name="name">
+      <input type="text" id ="name" name="naam">
       <label for="name" class="labelfloat">Naam</label>
       </p>
 
@@ -83,7 +75,7 @@
       </p>
 
       <p>
-      <textarea rows="5"></textarea>
+      <textarea rows="5" name="bericht"></textarea>
       <label for="name">Uw bericht</label>
       </p>
 
@@ -93,38 +85,7 @@
       </div>
 
   </div>
-  <!--<div class="contact_foto_grid penguin resize70">
-  </div>
-  <div class="contact_grid">
-    <div class="contact_cell">
-      <h1> Neem contact op met ons lieve mensjes.</h1>
-    </div>
-  </div>-->
 
-  <!--
-      <section class="foto_subpage penguin">
-      </section>
-
-      <section class="content">
-
-        <div class="tekst_titel">
-          <h1> Neem contact op met ons lieve mensjes.</h1>
-        </div>
-
-        <div class="tekst_container">
-          <div class="tekst_links">
-            <h1>Titel Content</h1>
-            <p>test</p>
-          </div>
-
-          <div class="tekst_rechts">
-            <p>Tekst content</p>
-          </div>
-        </div>
-
-      </section>
-    </div>
--->
 
   <script>
   function openNav() {
