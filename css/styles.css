@@ -719,7 +719,7 @@ footer p {
 }
 
 .box-content-testjan3 {
-    padding: 65vh 7px 0;
+    padding: 67vh 7px 0;
     width: 100%;
     bottom: 0
 }
@@ -819,8 +819,14 @@ footer p {
         bottom: 10px;
         background-color: rgba(255, 255, 255, .6)
     }
+    .box-content-testjan3 h1 {
+      font-size: 1.6rem;
+    }
+    .box-content-testjan3 h2 {
+      font-size: 1.2rem;
+    }
     .box-content-testjan3 p {
-        font-size: 1.1em;
+        font-size: 1em;
         opacity: 1
     }
     .box-content-testjan3 p span {
@@ -902,7 +908,6 @@ footer a {
 .grid_img {
     grid-row: 2;
     grid-column: 1;
-	background-color:#f2f2f2
 }
 
 .grid_img img {
@@ -1020,7 +1025,7 @@ footer a {
         transition: all .25s ease;
         padding-bottom: 1px;
         border-bottom: 1px #BDBDBD solid
-		
+
     }
     .bread-active:hover {
         border-bottom: 1px solid #fff;
@@ -1062,6 +1067,9 @@ footer a {
     }
     .grid_span_all .flex-item {
         width: 20%
+    }
+    .flex-item p {
+      text-align:
     }
     .grid_span_all h2 {
         height: 120px;
@@ -1156,7 +1164,10 @@ footer a {
 }
 
 .contacteer-ons {
-    margin: 40px 0
+    margin: 40px 0;
+}
+.contact-bg-grijs {
+  //background-color: #f2f2f2;
 }
 
 .contacteer-ons h1 {
@@ -1263,7 +1274,7 @@ footer a {
 }
 
 .big-fontsize {
-    font-size: 120%
+    font-size: 110%
 }
 
 .big-fontsize h1 {
