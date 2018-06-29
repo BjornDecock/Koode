@@ -512,7 +512,9 @@ ul {
 form p {
     position: relative
 }
-.box:hover {background-color: rgba(100, 160, 217, 0.3);}
+.box:hover {
+  background-color: rgba(100, 160, 217, 0.3);
+}
 .box:hover .box-content h1,
 .box:hover .box-content p {
     transform: translateY(-15px);
@@ -692,16 +694,16 @@ footer p {
 
 .box {
     width: 33, 34%;
-    height: 100vh
+    height: 100vh;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
 }
 
 .box-border {
     border-left: 3px solid #fff;
     border-right: 3px solid #fff
-}
-
-.box:hover .box-content p {
-    opacity: 1
 }
 
 .box-content-testjan3 h1,
@@ -752,6 +754,10 @@ footer p {
 .box:hover .box-content-testjan3 p {
     transform: translateY(-5px);
     opacity: 1
+}
+
+.box:hover .box-content p {
+    opacity: 0;
 }
 
 .fill-box {
